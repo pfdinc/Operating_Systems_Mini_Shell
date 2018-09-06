@@ -69,21 +69,7 @@ void  myExecvp(char **argv)
 
 	{   int status;
 		waitpid(pid, &status , 0);
-/*
-			if(status == 0)
 
-			{
-				//cout<<" child process quit properly!"<<endl;
-
-			}
-
-			else if(status < 0)
-
-			{
-
-			//cout<<"ERROR:wrong input"<<endl;
-
-			}*/
 	}
 }
 
@@ -98,9 +84,7 @@ void StrTokenizer(char *input, char **argv)
 	}
 
 	*argv = NULL;
-
 }
-
 
 int GetEnv()
 {
@@ -115,10 +99,8 @@ int GetEnv()
 		arr2[k] = Tokenized;
 		Tokenized = strtok(NULL, ":");
 		k++;
-
-//cout<< "line 45" <<endl;
 	}
-//cout<< "line 46" <<endl;
+
 	arr2[k] = NULL;
 }
 
